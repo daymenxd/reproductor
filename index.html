@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reproductor de Musica</title>
+</head>
+<body>
+    <h1>Reproductor</h1>
+        <center>
+    <h3>Lover - Taylor Swift</h3>
+        <img src="lover.jpg" height="300" width="300">
+        <br>
+        <br>
+        <audio controls>
+            <source src="lover.mp3" type="audio/mpeg">
+        </audio>
+            <br>
+
+    <button onclick="playAudio()">Reproducir</button>
+    <button onclick="pauseAudio()">Pausar</button>   
+    </center>
+
+    <script>
+        var audio = document.getElementById("audio-player");
+
+        function playAudio() {
+            audio.play();
+        }
+
+        function pauseAudio() {
+            audio.pause();
+        }
+    </script>
+</body>
+</html>
